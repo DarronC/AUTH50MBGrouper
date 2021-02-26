@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Auth50MB-Csharp": {
+      "commandName": "Project",
+      "commandLineArgs": "@\"C:\\Users\\DCharles\\Desktop\\Auths_21\",@\"C:\\Users\\DCharles\\Desktop\\New folder\\\""
+    }
+  }
+}
