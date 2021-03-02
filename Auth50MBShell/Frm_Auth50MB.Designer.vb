@@ -31,6 +31,8 @@ Partial Class Frm_Auth50MB
         Me.Label3 = New System.Windows.Forms.Label()
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.FolderBrowserDialog2 = New System.Windows.Forms.FolderBrowserDialog()
+        Me.txt_year = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -53,23 +55,23 @@ Partial Class Frm_Auth50MB
         '
         'txt_readFrom
         '
-        Me.txt_readFrom.Enabled = False
         Me.txt_readFrom.Location = New System.Drawing.Point(78, 53)
         Me.txt_readFrom.Name = "txt_readFrom"
+        Me.txt_readFrom.ReadOnly = True
         Me.txt_readFrom.Size = New System.Drawing.Size(283, 20)
         Me.txt_readFrom.TabIndex = 2
         '
         'txt_writeTo
         '
-        Me.txt_writeTo.Enabled = False
         Me.txt_writeTo.Location = New System.Drawing.Point(78, 127)
         Me.txt_writeTo.Name = "txt_writeTo"
+        Me.txt_writeTo.ReadOnly = True
         Me.txt_writeTo.Size = New System.Drawing.Size(283, 20)
         Me.txt_writeTo.TabIndex = 3
         '
         'Btn_Grouper
         '
-        Me.Btn_Grouper.Location = New System.Drawing.Point(180, 176)
+        Me.Btn_Grouper.Location = New System.Drawing.Point(177, 241)
         Me.Btn_Grouper.Name = "Btn_Grouper"
         Me.Btn_Grouper.Size = New System.Drawing.Size(158, 40)
         Me.Btn_Grouper.TabIndex = 4
@@ -96,12 +98,32 @@ Partial Class Frm_Auth50MB
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Select the folder to place the grouped and zipped Authorizations..."
         '
+        'txt_year
+        '
+        Me.txt_year.Location = New System.Drawing.Point(246, 183)
+        Me.txt_year.Name = "txt_year"
+        Me.txt_year.Size = New System.Drawing.Size(115, 20)
+        Me.txt_year.TabIndex = 8
+        Me.txt_year.Text = "2023"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(223, 167)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(138, 13)
+        Me.Label2.TabIndex = 9
+        Me.Label2.Text = "Select Year For File Naming"
+        '
         'Frm_Auth50MB
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.ClientSize = New System.Drawing.Size(512, 243)
+        Me.ClientSize = New System.Drawing.Size(521, 302)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txt_year)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Btn_Grouper)
@@ -125,4 +147,6 @@ Partial Class Frm_Auth50MB
     Friend WithEvents Label3 As Label
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
     Friend WithEvents FolderBrowserDialog2 As FolderBrowserDialog
+    Friend WithEvents txt_year As TextBox
+    Friend WithEvents Label2 As Label
 End Class

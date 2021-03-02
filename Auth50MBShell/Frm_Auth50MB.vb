@@ -10,7 +10,7 @@ Public Class Frm_Auth50MB
         If String.IsNullOrEmpty(txt_readFrom.Text) Or String.IsNullOrEmpty(txt_writeTo.Text) Then
             MsgBox("Select Folders To Launch Application.")
         Else
-            argu = String.Format("/c dotnet Auth50MB-Csharp.dll {0}{1}{0} {0}{2}{0}", ControlChars.Quote, txt_readFrom.Text, txt_writeTo.Text)
+            argu = String.Format("/c dotnet Auth50MB-Csharp.dll {0}{1}{0} {0}{2}{0} {0}{3}{0}", ControlChars.Quote, txt_readFrom.Text, txt_writeTo.Text, txt_year.Text)
             psi.Arguments = argu
             pro = Process.Start(psi)
             pro.WaitForExit()

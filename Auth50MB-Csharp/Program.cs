@@ -7,16 +7,17 @@ namespace Auth50MB_Csharp
     {
         static void Main(string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length != 3)
             {
-                Console.WriteLine("Please Supply Arguments");
-                Console.WriteLine("Arg1: ReadFrom, Arg2: WriteTo");
+                Console.WriteLine("No Arguments passed. Please Supply Arguments");
+                Console.WriteLine("Arg1: ReadFrom, Arg2: WriteTo, Arg3: Year");
                 return;
             }
 
             Console.WriteLine($"Write to {args[1]} in progress...");
             DirectoryInfo masterfolder = new DirectoryInfo(args[0].ToString());
             string path = masterfolder.FullName;
+            string year = args[2];
             var filesArr = masterfolder.GetFiles();
             int i = 1;
             int filesizelimit = 50000000; //Bytes. 50MB
@@ -25,7 +26,7 @@ namespace Auth50MB_Csharp
             bool stageMode = false;
             bool firstCheck = true;
             string baseWritingFolder = args[1];
-            string writingFolder = baseWritingFolder + @"\AUTH2023-074-" + i.ToString("00");
+            string writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
             string stagingFolder = baseWritingFolder + @"\Stag";
             string previousSnip = "";
             Directory.CreateDirectory(stagingFolder);
@@ -38,7 +39,7 @@ namespace Auth50MB_Csharp
                 //Console.ForegroundColor = ConsoleColor.White;
                 //Console.WriteLine((totalFileSize / 1000000) + "MB------" + file.Name.ToString());
                 string filename = file.Name.ToString();
-                writingFolder = baseWritingFolder + @"\AUTH2023-074-" + i.ToString("00");
+                writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
                 if (!Directory.Exists(writingFolder))
                 {
                     Directory.CreateDirectory(writingFolder);
@@ -48,7 +49,7 @@ namespace Auth50MB_Csharp
                     firstCheck = true;
                     if (stageMode == true)
                     {
-                        StageMover(ref i, ref totalFileSize, ref stagingFileSize, ref stageMode, writingFolder, stagingFolder, filesizelimit, ref filecount, baseWritingFolder); //next file is not CA and program is in stagemode                                                                                               //
+                        StageMover(ref i, ref totalFileSize, ref stagingFileSize, ref stageMode, writingFolder, stagingFolder, filesizelimit, ref filecount, baseWritingFolder,year); //next file is not CA and program is in stagemode                                                                                               //
                     }
                     if (file.Length + totalFileSize < filesizelimit)
                     {
@@ -60,7 +61,7 @@ namespace Auth50MB_Csharp
                     else
                     {
                         i += 1;
-                        writingFolder = baseWritingFolder + @"\AUTH2023-074-" + i.ToString("00");
+                        writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
                         Directory.CreateDirectory(writingFolder);
                         file.CopyTo(writingFile);
                         filecount = 1;
@@ -72,7 +73,7 @@ namespace Auth50MB_Csharp
                     //if snip changes AND staging folder is at least 5MB from 50MB, Move now. this prevents many folders with just 1 or 2 CAs
                     if (previousSnip != file.Name.ToString().Substring(24, 5) && firstCheck == false)// && stagingFileSize > filesizelimit - 5000000) 
                     {
-                        StageMover(ref i, ref totalFileSize, ref stagingFileSize, ref stageMode, writingFolder, stagingFolder, filesizelimit, ref filecount, baseWritingFolder);
+                        StageMover(ref i, ref totalFileSize, ref stagingFileSize, ref stageMode, writingFolder, stagingFolder, filesizelimit, ref filecount, baseWritingFolder,year);
                     }
                     stageMode = true;
                     previousSnip = file.Name.ToString().Substring(24, 5);
@@ -85,7 +86,7 @@ namespace Auth50MB_Csharp
 
             if (Stag.GetFiles().Length > 0)
             {
-                StageMover(ref i, ref totalFileSize, ref stagingFileSize, ref stageMode, writingFolder, stagingFolder, filesizelimit, ref filecount, baseWritingFolder);
+                StageMover(ref i, ref totalFileSize, ref stagingFileSize, ref stageMode, writingFolder, stagingFolder, filesizelimit, ref filecount, baseWritingFolder,year);
             }
             Directory.Delete(stagingFolder);
             BatchWizard(args);
@@ -93,7 +94,7 @@ namespace Auth50MB_Csharp
 
         }
 
-        private static void StageMover(ref int i, ref double totalFileSize, ref double stagingFileSize, ref bool stageMode, string writingFolder, string stagingFolder, int filesizelimit, ref int filecount,string baseWritingFolder)
+        private static void StageMover(ref int i, ref double totalFileSize, ref double stagingFileSize, ref bool stageMode, string writingFolder, string stagingFolder, int filesizelimit, ref int filecount,string baseWritingFolder,string year)
         {
             FileInfo[] stageArr = new DirectoryInfo(stagingFolder).GetFiles();
 
@@ -117,7 +118,7 @@ namespace Auth50MB_Csharp
                 if (filecount >= 25)
                 {
                     i += 1;
-                    writingFolder = baseWritingFolder + @"\AUTH2023-074-" + i.ToString("00");
+                    writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
                     Directory.CreateDirectory(writingFolder);
                     totalFileSize = 0;
                     filecount = 0;
@@ -131,7 +132,7 @@ namespace Auth50MB_Csharp
                     if (totalFileSize > 50000000)
                     {
                         i += 1;
-                        writingFolder = baseWritingFolder + @"\AUTH2023-074-" + i.ToString("00");
+                        writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
                         Directory.CreateDirectory(writingFolder);
                         totalFileSize = 0;
                         filecount = 0;
@@ -155,6 +156,9 @@ namespace Auth50MB_Csharp
                 batFile.WriteLine("for /d %%X in (*) do \"%ProgramFiles%\\7-Zip\\7z.exe\" a \"%%X.zip\" \".\\%%X\\*\"");
 
             }
+            //Can't run batch with Process while using VB.net shell. If using dll/exe directly without VB.net Shell uncomment code below
+            //following procudure moved to the shell to avoided nested Processes
+
             //System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             //startInfo.WorkingDirectory = args[1];
             //startInfo.UseShellExecute = false ;
