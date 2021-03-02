@@ -6,6 +6,7 @@
     <RootNamespace>Auth50MB_Csharp</RootNamespace>
     <ApplicationIcon />
     <Win32Resource />
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>

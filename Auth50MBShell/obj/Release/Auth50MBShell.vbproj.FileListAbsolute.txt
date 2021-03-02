@@ -1,0 +1,15 @@
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Release\Auth50MBShell.exe.config
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Release\Auth50MBShell.exe
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Release\Auth50MBShell.pdb
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Release\Auth50MBShell.xml
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\obj\Release\Auth50MBShell.Frm_Auth50MB.resources
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\obj\Release\Auth50MBShell.Resources.resources
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\obj\Release\Auth50MBShell.vbproj.GenerateResource.cache
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\obj\Release\Auth50MBShell.vbproj.CoreCompileInputs.cache
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\obj\Release\Auth50MBShell.exe
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\obj\Release\Auth50MBShell.xml
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\obj\Release\Auth50MBShell.pdb
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Release\Auth50MB-Csharp.dll
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Release\Auth50MB-Csharp.deps.json
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Release\Auth50MB-Csharp.runtimeconfig.json
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\obj\Release\Auth50MBShell.vbprojAssemblyReference.cache

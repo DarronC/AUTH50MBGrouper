@@ -10,8 +10,6 @@ C:\Users\Dar\Source\Repos\Auth50MB\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth5
 C:\Users\Dar\Source\Repos\Auth50MB\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.dll
 C:\Users\Dar\Source\Repos\Auth50MB\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.pdb
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.deps.json
-C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.runtimeconfig.json
-C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.runtimeconfig.dev.json
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.dll
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.pdb
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.csproj.CoreCompileInputs.cache
@@ -20,4 +18,5 @@ C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.dll
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.pdb
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\grouper.bat
-C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.csprojAssemblyReference.cache
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.runtimeconfig.json
+C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.runtimeconfig.dev.json
