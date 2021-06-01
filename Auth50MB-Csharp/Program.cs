@@ -62,6 +62,7 @@ namespace Auth50MB_Csharp
                     {
                         i += 1;
                         writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
+                        writingFile = writingFolder + @"\" + file.Name;
                         Directory.CreateDirectory(writingFolder);
                         file.CopyTo(writingFile);
                         filecount = 1;

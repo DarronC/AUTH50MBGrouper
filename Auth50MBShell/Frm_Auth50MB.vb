@@ -18,12 +18,13 @@ Public Class Frm_Auth50MB
             psibat.CreateNoWindow = False
             psibat.WorkingDirectory = txt_writeTo.Text
             psibat.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal
-            Try
-                pro2 = Process.Start(psibat)
-                pro2.WaitForExit()
-            Catch ex As Exception
-                Console.WriteLine("Something went wrong with the Batch File: {0}", ex.ToString())
-            End Try
+            'See Master Branch for error
+            'Try
+            '    pro2 = Process.Start(psibat)
+            '    pro2.WaitForExit()
+            'Catch ex As Exception
+            '    Console.WriteLine("Something went wrong with the Batch File: {0}", ex.ToString())
+            'End Try
             My.Computer.FileSystem.DeleteFile(txt_writeTo.Text + "\Grouper.bat")
         End If
 
