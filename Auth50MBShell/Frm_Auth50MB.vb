@@ -18,8 +18,7 @@ Public Class Frm_Auth50MB
             psibat.CreateNoWindow = False
             psibat.WorkingDirectory = txt_writeTo.Text
             'Following Commented Code Runs the Grouper batch file. Grouper bat will not run correctly if executed on a network drive (ie. HomeDir). Will begin zipping folders in C:\Windows because cmd
-            'can't %~dp0 to network path, either move working files
-            'To a local directory or this bat must be replaced with a powershell script. 
+            'can't %~dp0 to network path, either move working files To a local directory or this bat must be replaced with a powershell script. 
             'Try
             '    pro2 = Process.Start(psibat)
             '    pro2.WaitForExit()

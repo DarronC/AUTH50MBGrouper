@@ -20,7 +20,7 @@ namespace Auth50MB_Csharp
             string year = args[2];
             var filesArr = masterfolder.GetFiles();
             int i = 1;
-            int filesizelimit = 50000000; //Bytes. 50MB
+            int filesizelimit = 50000000; //Bytes.  50MB
             double totalFileSize = 0;
             double stagingFileSize = 0;
             bool stageMode = false;
