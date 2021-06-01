@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Auth50MB-Csharp": {
+      "commandName": "Project",
+      "commandLineArgs": "\"X:\\20AT2023-074\" \"\\\\KMLFS01\\HomeDir$\\DCharles\\Desktop\\New folder\" \"2023\""
+    }
+  }
+}
