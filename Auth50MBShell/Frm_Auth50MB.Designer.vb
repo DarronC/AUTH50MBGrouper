@@ -118,8 +118,7 @@ Partial Class Frm_Auth50MB
         '
         'Frm_Auth50MB
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.ClientSize = New System.Drawing.Size(521, 302)
         Me.Controls.Add(Me.Label2)
