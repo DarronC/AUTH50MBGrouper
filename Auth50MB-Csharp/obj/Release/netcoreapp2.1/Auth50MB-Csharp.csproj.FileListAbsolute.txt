@@ -16,7 +16,6 @@ X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Release\ne
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Release\netcoreapp2.1\Auth50MB-Csharp.runtimeconfig.dev.json
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Release\netcoreapp2.1\Auth50MB-Csharp.dll
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Release\netcoreapp2.1\Auth50MB-Csharp.pdb
-X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.csproj.AssemblyReference.cache
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.AssemblyInfoInputs.cache
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.AssemblyInfo.cs
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.csproj.CoreCompileInputs.cache

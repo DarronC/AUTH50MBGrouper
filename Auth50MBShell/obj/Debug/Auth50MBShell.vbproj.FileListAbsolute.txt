@@ -12,3 +12,19 @@ C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\obj\Debug\Auth50MBShell.pd
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Debug\Auth50MB-Csharp.dll
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Debug\Auth50MB-Csharp.deps.json
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MBShell\bin\Debug\Auth50MB-Csharp.runtimeconfig.json
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\Auth50MB-Csharp.dll
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\Auth50MB-Csharp.deps.json
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\Auth50MB-Csharp.runtimeconfig.json
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\Auth50MBShell.exe.config
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\Auth50MBShell.exe
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\Auth50MBShell.pdb
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\Auth50MBShell.xml
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.Frm_Auth50MB.resources
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.Resources.resources
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.vbproj.GenerateResource.cache
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.vbproj.CoreCompileInputs.cache
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.exe
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.xml
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.pdb
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\Grouper.ps1
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.vbproj.AssemblyReference.cache

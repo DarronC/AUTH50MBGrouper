@@ -20,7 +20,6 @@ X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Release\Auth
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Release\Auth50MBShell.exe
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Release\Auth50MBShell.pdb
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Release\Auth50MBShell.xml
-X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Release\Auth50MBShell.vbproj.AssemblyReference.cache
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Release\Auth50MBShell.Frm_Auth50MB.resources
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Release\Auth50MBShell.Resources.resources
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Release\Auth50MBShell.vbproj.GenerateResource.cache
@@ -28,3 +27,4 @@ X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Release\Auth
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Release\Auth50MBShell.exe
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Release\Auth50MBShell.xml
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Release\Auth50MBShell.pdb
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Release\Grouper.ps1

@@ -26,10 +26,11 @@ X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Debug\netc
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.runtimeconfig.dev.json
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.dll
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Auth50MB-Csharp.pdb
-X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.csproj.AssemblyReference.cache
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.AssemblyInfoInputs.cache
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.AssemblyInfo.cs
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.csproj.CoreCompileInputs.cache
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.dll
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.pdb
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.genruntimeconfig.cache
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Debug\netcoreapp2.1\Grouper.ps1
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Debug\netcoreapp2.1\Auth50MB-Csharp.csproj.AssemblyReference.cache

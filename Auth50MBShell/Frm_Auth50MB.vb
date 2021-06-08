@@ -1,31 +1,36 @@
 ﻿Imports System.IO
 Public Class Frm_Auth50MB
-    Dim psi As ProcessStartInfo = New ProcessStartInfo("cmd.exe")
-
     Dim pro As Process = New Process()
     Dim pro2 As Process = New Process()
     Dim argu As String
+    Dim currdir As String
     Private Sub Btn_Grouper_Click(sender As Object, e As EventArgs) Handles Btn_Grouper.Click
-        Dim psibat As ProcessStartInfo = New ProcessStartInfo(txt_writeTo.Text + "\Grouper.bat")
         If String.IsNullOrEmpty(txt_readFrom.Text) Or String.IsNullOrEmpty(txt_writeTo.Text) Then
             MsgBox("Select Folders To Launch Application.")
         Else
-            argu = String.Format("/c dotnet Auth50MB-Csharp.dll {0}{1}{0} {0}{2}{0} {0}{3}{0}", ControlChars.Quote, txt_readFrom.Text, txt_writeTo.Text, txt_year.Text)
-            psi.Arguments = argu
+            argu = String.Format("dotnet Auth50MB-Csharp.dll '{1}' '{2}' '{3}'", ControlChars.Quote, txt_readFrom.Text, txt_writeTo.Text, txt_year.Text)
+            Dim psi As ProcessStartInfo = New ProcessStartInfo("powershell.exe", "-WindowStyle Normal -command " + argu)
             pro = Process.Start(psi)
             pro.WaitForExit()
-            psibat.UseShellExecute = False
-            psibat.CreateNoWindow = False
-            psibat.WorkingDirectory = txt_writeTo.Text
-            psibat.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal
-            'See Master Branch for error
-            'Try
-            '    pro2 = Process.Start(psibat)
-            '    pro2.WaitForExit()
-            'Catch ex As Exception
-            '    Console.WriteLine("Something went wrong with the Batch File: {0}", ex.ToString())
-            'End Try
-            My.Computer.FileSystem.DeleteFile(txt_writeTo.Text + "\Grouper.bat")
+            pro.Close()
+            Try
+                currdir = My.Computer.FileSystem.CurrentDirectory
+                My.Computer.FileSystem.CopyFile(currdir + "\Grouper.ps1", txt_writeTo.Text + "\Grouper.ps1", True)
+                argu = String.Format(".\Grouper")
+                Dim psibat As ProcessStartInfo = New ProcessStartInfo("powershell.exe", "-command " + argu)
+                psibat.UseShellExecute = False
+                psibat.CreateNoWindow = False
+                psibat.WorkingDirectory = txt_writeTo.Text
+                pro2 = Process.Start(psibat)
+                pro2.WaitForExit()
+            Catch ex As Exception
+                Console.WriteLine("Something went wrong with the Batch File: {0}", ex.ToString())
+            End Try
+            Try
+                My.Computer.FileSystem.DeleteFile(txt_writeTo.Text + "\Grouper.ps1")
+            Catch ex As Exception
+                Console.WriteLine("is .NET Core installed on system?")
+            End Try
         End If
 
 

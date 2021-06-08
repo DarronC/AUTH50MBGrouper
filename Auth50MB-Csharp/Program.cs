@@ -13,7 +13,6 @@ namespace Auth50MB_Csharp
                 Console.WriteLine("Arg1: ReadFrom, Arg2: WriteTo, Arg3: Year");
                 return;
             }
-
             Console.WriteLine($"Write to {args[1]} in progress...");
             DirectoryInfo masterfolder = new DirectoryInfo(args[0].ToString());
             string path = masterfolder.FullName;
@@ -26,7 +25,7 @@ namespace Auth50MB_Csharp
             bool stageMode = false;
             bool firstCheck = true;
             string baseWritingFolder = args[1];
-            string writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
+            string writingFolder = baseWritingFolder + @"\20AT" + year + "-074-" + i.ToString("00");
             string stagingFolder = baseWritingFolder + @"\Stag";
             string previousSnip = "";
             Directory.CreateDirectory(stagingFolder);
@@ -39,7 +38,7 @@ namespace Auth50MB_Csharp
                 //Console.ForegroundColor = ConsoleColor.White;
                 //Console.WriteLine((totalFileSize / 1000000) + "MB------" + file.Name.ToString());
                 string filename = file.Name.ToString();
-                writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
+                writingFolder = baseWritingFolder + @"\20AT" + year + "-074-" + i.ToString("00");
                 if (!Directory.Exists(writingFolder))
                 {
                     Directory.CreateDirectory(writingFolder);
@@ -61,7 +60,7 @@ namespace Auth50MB_Csharp
                     else
                     {
                         i += 1;
-                        writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
+                        writingFolder = baseWritingFolder + @"\20AT" + year + "-074-" + i.ToString("00");
                         writingFile = writingFolder + @"\" + file.Name;
                         Directory.CreateDirectory(writingFolder);
                         file.CopyTo(writingFile);
@@ -90,7 +89,8 @@ namespace Auth50MB_Csharp
                 StageMover(ref i, ref totalFileSize, ref stagingFileSize, ref stageMode, writingFolder, stagingFolder, filesizelimit, ref filecount, baseWritingFolder,year);
             }
             Directory.Delete(stagingFolder);
-            BatchWizard(args);
+            //PowerShellRunner(args);
+            
             Console.WriteLine($"Task Completed Successfully, Authorizations Zipped and unzipped files/folders placed in {args[1]}");
 
         }
@@ -119,7 +119,7 @@ namespace Auth50MB_Csharp
                 if (filecount >= 25)
                 {
                     i += 1;
-                    writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
+                    writingFolder = baseWritingFolder + @"\20AT" + year + "-074-" + i.ToString("00");
                     Directory.CreateDirectory(writingFolder);
                     totalFileSize = 0;
                     filecount = 0;
@@ -133,7 +133,7 @@ namespace Auth50MB_Csharp
                     if (totalFileSize > 50000000)
                     {
                         i += 1;
-                        writingFolder = baseWritingFolder + @"\AUTH"+ year + "-074-" + i.ToString("00");
+                        writingFolder = baseWritingFolder + @"\20AT" + year + "-074-" + i.ToString("00");
                         Directory.CreateDirectory(writingFolder);
                         totalFileSize = 0;
                         filecount = 0;
@@ -148,35 +148,33 @@ namespace Auth50MB_Csharp
             stageMode = false;
             stagingFileSize = 0;
         }
-        private static void BatchWizard(string[] args)
+        private static void PowerShellRunner(string[] args)
         {
-            string batFilefullPath = args[1] + @"\Grouper.bat";
+            string batFilefullPath = args[1] + @"\Grouper.ps1";
 
-            using (StreamWriter batFile = new StreamWriter(batFilefullPath))
-            {
-                batFile.WriteLine("for /d %%X in (*) do \"%ProgramFiles%\\7-Zip\\7z.exe\" a \"%%X.zip\" \".\\%%X\\*\"");
 
-            }
             //Can't run batch with Process while using VB.net shell. If using dll/exe directly without VB.net Shell uncomment code below
             //following procudure moved to the shell to avoided nested Processes
 
-            //System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            //System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo("powershell.exe");
             //startInfo.WorkingDirectory = args[1];
-            //startInfo.UseShellExecute = false ;
-            //startInfo.FileName = "Grouper.bat";
+            //startInfo.UseShellExecute = false;
+            //startInfo.FileName = "Grouper.ps1";
             //startInfo.CreateNoWindow = false;
             //startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
+            //startInfo.Verb = "runas";
+            //startInfo.Arguments = "-command Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted";
             //try
-            //{            
+            //{
             //    using (System.Diagnostics.Process process = System.Diagnostics.Process.Start(startInfo))
-            //    { 
+            //    {
             //        process.WaitForExit();
             //    }
             //}
             //catch (Exception e)
             //{
-            //    Console.WriteLine("Something went wrong with Batch File: {0}",e.ToString());
-                
+            //    Console.WriteLine("Something went wrong with Batch File: {0}", e.ToString());
+
             //}
         }
     }
