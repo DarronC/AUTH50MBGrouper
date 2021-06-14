@@ -22,3 +22,4 @@ X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\ne
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.dll
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.pdb
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.genruntimeconfig.cache
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.csproj.AssemblyReference.cache

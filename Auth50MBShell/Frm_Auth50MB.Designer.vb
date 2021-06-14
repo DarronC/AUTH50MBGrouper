@@ -33,6 +33,10 @@ Partial Class Frm_Auth50MB
         Me.FolderBrowserDialog2 = New System.Windows.Forms.FolderBrowserDialog()
         Me.txt_year = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Txt_StartNo = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txt_NameSche = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -100,9 +104,9 @@ Partial Class Frm_Auth50MB
         '
         'txt_year
         '
-        Me.txt_year.Location = New System.Drawing.Point(246, 183)
+        Me.txt_year.Location = New System.Drawing.Point(165, 184)
         Me.txt_year.Name = "txt_year"
-        Me.txt_year.Size = New System.Drawing.Size(115, 20)
+        Me.txt_year.Size = New System.Drawing.Size(68, 20)
         Me.txt_year.TabIndex = 8
         Me.txt_year.Text = "2023"
         '
@@ -110,18 +114,58 @@ Partial Class Frm_Auth50MB
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(223, 167)
+        Me.Label2.Location = New System.Drawing.Point(153, 168)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(138, 13)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Select Year For File Naming"
+        '
+        'Txt_StartNo
+        '
+        Me.Txt_StartNo.Location = New System.Drawing.Point(401, 184)
+        Me.Txt_StartNo.Name = "Txt_StartNo"
+        Me.Txt_StartNo.Size = New System.Drawing.Size(46, 20)
+        Me.Txt_StartNo.TabIndex = 12
+        Me.Txt_StartNo.Text = "1"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(387, 168)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(83, 13)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "Starting Number"
+        '
+        'txt_NameSche
+        '
+        Me.txt_NameSche.Location = New System.Drawing.Point(22, 184)
+        Me.txt_NameSche.Name = "txt_NameSche"
+        Me.txt_NameSche.Size = New System.Drawing.Size(115, 20)
+        Me.txt_NameSche.TabIndex = 0
+        Me.txt_NameSche.Text = "AUTH"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(22, 168)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(85, 13)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "Naming Scheme"
         '
         'Frm_Auth50MB
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.ClientSize = New System.Drawing.Size(521, 302)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.txt_NameSche)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Txt_StartNo)
         Me.Controls.Add(Me.txt_year)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
@@ -148,4 +192,8 @@ Partial Class Frm_Auth50MB
     Friend WithEvents FolderBrowserDialog2 As FolderBrowserDialog
     Friend WithEvents txt_year As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Txt_StartNo As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txt_NameSche As TextBox
+    Friend WithEvents Label4 As Label
 End Class

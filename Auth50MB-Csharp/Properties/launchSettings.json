@@ -2,7 +2,7 @@
   "profiles": {
     "Auth50MB-Csharp": {
       "commandName": "Project",
-      "commandLineArgs": "\"X:\\New folder\" \"\\\\KMLFS01\\HomeDir$\\DCharles\\Desktop\\New Folder\" \"2023\""
+      "commandLineArgs": "\"X:\\New folder Load\" \"X:\\New folder Clean\" \"2023\" \"AT20\" \"8\""
     }
   }
 }

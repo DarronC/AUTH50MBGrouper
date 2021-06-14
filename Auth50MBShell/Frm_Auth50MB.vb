@@ -1,14 +1,25 @@
 ﻿Imports System.IO
+Imports System.Text.RegularExpressions
 Public Class Frm_Auth50MB
     Dim pro As Process = New Process()
     Dim pro2 As Process = New Process()
     Dim argu As String
     Dim currdir As String
     Private Sub Btn_Grouper_Click(sender As Object, e As EventArgs) Handles Btn_Grouper.Click
+        Try
+            Integer.Parse(Txt_StartNo.Text)
+        Catch ex As Exception
+            MsgBox("Enter a number", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End Try
+        If Regex.IsMatch(txt_NameSche.Text, pattern:="[*?:<>|/\\]") Then
+            MsgBox("Invalid Character", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
         If String.IsNullOrEmpty(txt_readFrom.Text) Or String.IsNullOrEmpty(txt_writeTo.Text) Then
             MsgBox("Select Folders To Launch Application.")
         Else
-            argu = String.Format("dotnet Auth50MB-Csharp.dll '{1}' '{2}' '{3}'", ControlChars.Quote, txt_readFrom.Text, txt_writeTo.Text, txt_year.Text)
+            argu = String.Format("dotnet Auth50MB-Csharp.dll '{1}' '{2}' '{3}' '{4}' '{5}'", ControlChars.Quote, txt_readFrom.Text, txt_writeTo.Text, txt_year.Text, txt_NameSche.Text, Txt_StartNo.Text)
             Dim psi As ProcessStartInfo = New ProcessStartInfo("powershell.exe", "-WindowStyle Normal -command " + argu)
             pro = Process.Start(psi)
             pro.WaitForExit()
