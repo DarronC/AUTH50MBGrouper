@@ -10,7 +10,6 @@ C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\obj\Release\netcoreapp2.
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.dll
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.pdb
 C:\Users\DCharles\source\repos\Auth50MB\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.csprojAssemblyReference.cache
-X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Release\netcoreapp2.1\grouper.bat
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Release\netcoreapp2.1\Auth50MB-Csharp.deps.json
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Release\netcoreapp2.1\Auth50MB-Csharp.runtimeconfig.json
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\bin\Release\netcoreapp2.1\Auth50MB-Csharp.runtimeconfig.dev.json
@@ -21,5 +20,6 @@ X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\ne
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.csproj.CoreCompileInputs.cache
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.dll
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.pdb
-X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.genruntimeconfig.cache
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.csproj.AssemblyReference.cache
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.GeneratedMSBuildEditorConfig.editorconfig
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MB-Csharp\obj\Release\netcoreapp2.1\Auth50MB-Csharp.genruntimeconfig.cache

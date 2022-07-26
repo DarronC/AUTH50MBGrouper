@@ -28,3 +28,4 @@ X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.pdb
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\Grouper.ps1
 X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\obj\Debug\Auth50MBShell.vbproj.AssemblyReference.cache
+X:\Visual Studio Projects\AUTH50MBGrouper-VBShell\Auth50MBShell\bin\Debug\grouper.bat

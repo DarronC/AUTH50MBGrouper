@@ -9,10 +9,4 @@
     <StartupObject />
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Update="grouper.bat">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

@@ -147,36 +147,7 @@ namespace Auth50MB_Csharp
                 }
             }
             stageMode = false;
-            stagingFileSize = 0;
-        }
-        private static void PowerShellRunner(string[] args)
-        {
-            string batFilefullPath = args[1] + @"\Grouper.ps1";
-
-
-            //Can't run batch with Process while using VB.net shell. If using dll/exe directly without VB.net Shell uncomment code below
-            //following procudure moved to the shell to avoided nested Processes
-
-            //System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo("powershell.exe");
-            //startInfo.WorkingDirectory = args[1];
-            //startInfo.UseShellExecute = false;
-            //startInfo.FileName = "Grouper.ps1";
-            //startInfo.CreateNoWindow = false;
-            //startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
-            //startInfo.Verb = "runas";
-            //startInfo.Arguments = "-command Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted";
-            //try
-            //{
-            //    using (System.Diagnostics.Process process = System.Diagnostics.Process.Start(startInfo))
-            //    {
-            //        process.WaitForExit();
-            //    }
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine("Something went wrong with Batch File: {0}", e.ToString());
-
-            //}
+            stagingFileSize = 0;        
         }
     }
 }
